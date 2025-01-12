@@ -1,9 +1,18 @@
 package com.saima.todo.dto;
 
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-public record TodoDto(Long id,
-                      String title,
-                      String description,
-                      boolean completed) {
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class TodoDto {
+    private Long id;
+    private String title;
+    private String description;
+    private boolean completed;
 }
